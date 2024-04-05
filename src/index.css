@@ -1,13 +1,491 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  background-image: url(../src/Assets/sad-logo-bg.png);
+  background-size: 120px;
+  background-repeat: space repeat;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+}
+
+/* Navbar */
+.navbar {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  /* padding: 14px 20px; */
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.nav-links2 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links2 li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white;
+  margin-left: 16px;
+}
+
+.hamburger {
+  border-radius: 3px;
+  padding: 2px;
+  background: white;
+  font-size:44px;
+  color: rgb(143, 143, 143);
+  margin-left: 16px;
+}
+
+.logo {
+  border-radius: 50%;
+  background-color: #ffc107;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.navbar-right
+{
+  margin-right: 20px;
+}
+
+.navbar-content2
+{
+  display: none;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white;
+}
+
+/* Home */
+.main-container {
+  margin: 0 auto;
+  width: 50%;
+  height: 70vh;
+  background-color: white;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px 1px rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  margin-top: 40px;
+  overflow-y: auto; 
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; 
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.card-button{
+  background: #102463;
+  color: white;
+  border: 1px solid #102463;
+  padding: 17px 80px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.form-button {
+  background: #102463;
+  color: white;
+  border: 1px solid #102463;
+  padding: 17px 98px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+
+.card-button:hover,
+.form-button:hover {
+  background: #c82333;
+  color: white;
+  border: 1px solid #c82333;
+}
+
+.home-logo {
+  width: 300px;
+  height: 300px;
+}
+
+.xyz-text {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.border-bottom {
+  width: 90%;
+  border-bottom: 1px solid black;
+}
+
+/* Login Form */
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  padding: 5px 10px;
+}
+
+.form-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-input {
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.login-button {
+  background: orange;
+  color: white;
+  border: 1px solid orange;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Register Form  */
+
+.main-register-container {
+  margin: 0 auto;
+  width: 50%;
+  height: 70vh;
+  background-color: white;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px 1px rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  margin-top: 40px;
+  overflow-y: auto; 
+}
+
+.register-form {
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow
+{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between ;
+}
+
+.flexColumn
+{
+  display: flex;
+  flex-direction: column ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.register-form input {
+  padding: 5px 10px;
+}
+
+.label_required
+{
+  color: red;
+}
+
+.register-form-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.register-input {
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.register-button {
+  background: orange;
+  color: white;
+  border: 1px solid orange;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Form details */
+.main-details-container {
+  margin: 0 auto;
+  width: 50%;
+  height: 70vh;
+  background-color: white;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px 1px rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  margin-top: 50px;
+  overflow-y: auto; 
+}
+
+.logo2
+{
+  width: 170px;
+  height: 170px;
+}
+
+.border-bottom2 {
+  width: 100%;
+  border-bottom: 1px solid rgb(156, 156, 156);
+}
+
+.bold-label
+{
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+.semibold-label
+{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/* Media Query */
+
+@media (max-width: 1350px) {
+
+  .main-container {
+    width: 80% !important;
+  }
+  .main-register-container {
+    width: 80% !important;
+  }
+  .main-details-container {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .flexRow {
+    flex-direction: column !important;
+  }
+  .home-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 850px) {
+  .main-container {
+    width: 100% !important;
+    height: 80vh !important;
+    margin-top: 0px !important;
+  }
+
+  .main-register-container {
+    width: 100% !important;
+    height: 80vh !important;
+    margin-top: 0px !important;
+  }
+
+  .main-details-container {
+    width: 100% !important;
+    height: 80vh !important;
+    margin-top: 0px !important;
+  }
+
+  .center-container {
+    width: 100% !important;
+  }
+
+  .button-container
+  {
+    margin-top: 40px !important;
+  }
+
+  .navbar-content2
+  {
+    display: flex;
+  }
+  
+  .navbar-content
+  {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .resp-login {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .home-logo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: #fff;
+    background-image: none;
+    background-size: none;
+    background-repeat: space repeat;
+  }
+
+  .footer {
+    margin-top: 0px !important;
+    position: relative !important;
+  }
+
+  .form-container {
+    margin-top: 40px !important;
+  }
+
+  .button-container
+  {
+    margin-top: 50px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-container {
+    width: 100% !important;
+    height: 100vh !important;
+    margin-top: 0px !important;
+  }
+
+  .main-register-container {
+    width: 100% !important;
+    height: 100vh !important;
+    margin-top: 0px !important;
+  }
+
+  .main-details-container {
+    width: 100% !important;
+    height: 100vh !important;
+    margin-top: 0px !important;
+  }
+
+  .App {
+    width: 100% !important;
+  }
+
+  .footer {
+    margin-top: 0px !important;
+    position: relative !important;
+  }
+
+  .form-container {
+    margin-top: 50px !important;
+  }
+
+  .button-container
+  {
+    margin-top: 70px !important;
+  }
 }
